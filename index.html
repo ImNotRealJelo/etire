@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>E-Tire</title>
+		<link rel="stylesheet" href="public/tailwind.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	</head>
+<body class="bg-body text-darkest font-poppins pb-12 dark:bg-darkest transition-colors duration-300">
+
+	<header class="py-10">
+		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full font-poppins">
+			<div class=""><img src="assets/logo1.png" alt="" class="h-14 -mt-3 selector" id="logo"></div>
+			<div class="hidden md:flex space-x-8">
+				<a href="#" class="text-currentColor">Home</a>
+				<a href="#rationale" class="dark:text-body">Rationale</a>
+				<a href="#desc" class="dark:text-body">About</a>
+				<a href="#members"><button class="px-6 py-2 -mt-2 font-bold text-body dark:text-darkest rounded-md bg-currentColor">Members</button></a>
+				<input type="checkbox" name="" id="toggle" class="hidden" />
+				<label for="toggle">
+					<img src="assets/bulb1.png" class="h-10 -mt-3 transition-all ease-in-out hover:scale-125" alt="light bulb" id="bulb" onclick="changeBulb();">
+				</label>
+			</div>
+		</div>
+	</header>
+
+	<div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-16 w-full">
+		<div class="flex flex-wrap md:flex-nowrap">
+			<nav class="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-52">
+					<a href="#" class="nav-dot block w-6 h-6 rounded-lg border-4 border-currentColor dark:border-body">
+						<span class="bg-darkest px-2 py-1 rounded-md ml-10 opacity-0 text-body transition ease-in-out dark:bg-currentColor">Home</span>
+					</a>
+					<a href="#rationale" class="nav-dot block w-6 h-6 rounded-lg border-4 border-currentColor dark:border-body">
+						<span class="bg-darkest px-2 py-1 rounded-md ml-10 opacity-0 text-body transition ease-in-out dark:bg-currentColor">Rationale</span>
+					</a>
+					<a href="#desc" class="nav-dot block w-6 h-6 rounded-lg border-4 border-currentColor dark:border-body">
+						<span class="bg-darkest px-2 py-1 rounded-md ml-10 opacity-0 text-body transition ease-in-out dark:bg-currentColor">About</span>
+					</a>
+					<a href="#members" class="nav-dot block w-6 h-6 rounded-lg border-4 border-currentColor dark:border-body">
+						<span class="bg-darkest px-2 py-1 rounded-md ml-10 opacity-0 text-body transition ease-in-out dark:bg-currentColor">Members</span>
+					</a>
+				</div>
+			</nav>
+
+			<div class="lg:ml-20 max-w-xl mt-0 md:my-16 dark:text-body">
+				<h1 class="text-5xl font-bold md:text-7xl font-roboto">Electronic Tire.</h1>
+				<h2 class="text-2xl -mt-2 ">A Piezoelectric based tires that can generate its own electricity</h2>
+			</div>
+		</div>
+	</div>
+	<img src="/assets/landing1.png" alt="" class="hidden ml-64 -mt-40 h-96 md:block selector" id="landing">	
+
+	<div class="flex justify-between items-center mt-16 md:mt-0 md:px-14 lg:px-24 w-full bg-darkest dark:bg-twist">
+		<section class="w-full">
+			<h6 id="rationale" class="text-4xl md:ml-16 text-darkest dark:text-twist" data-aos="fade-in">Rationale<span class="text-darkest text-8xl dark:text-twist">.</span></h6>
+			<div class="py-8 px-8 max-w-6xl ml-24 md:ml-4 dark:bg-input space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+				<div class="text-center space-y-2 sm:text-left">
+					<h1 class="font-poppins text-2xl -ml-16 md:text-4xl md:ml-16 text-body" data-aos="fade-left">Rationale<span class="text-currentColor text-8xl">.</span></h1>
+					<p class="hidden md:flex font-roboto font-black text-base md:text-base ml-16 dark:text-twist">_</p>
+					<p class="-ml-16 font-roboto text-base md:flex md:text-base md:ml-16 pb-28 text-badge text-body" data-aos="fade-up">The Philippines has a large number of transportation vehicles. Different modes
+						of transportation are available, such as cars, buses, light rail transit (lrt), tricycles,
+						jeepneys, and more. According to bworldonline.com, an estimated 2.7 million
+						vehicles wander the streets of the Philippines every day. Aside from that, there are
+						certain houses in the Philippines that do not have electricity or those that are prone
+						to power interruptions. As a consequence of these common events, researchers
+						discovered a feasible alternative. They proposed a vehicle with a specific function
+						on its wheels, which may be utilized for more than simply a typical means of
+						transport. These vehicles will produce energy that may be utilized to create
+						electricity, providing all Filipinos affected by the rolling blackouts with a source of
+						energy. In this way, they would not only alleviate Filipinos' troubles, but also
+						significantly improve matters with more advanced features. It could be quite
+						convenient for the individuals who are able to consume and benefit from the
+						electricity generated. <br><br> Moreover, as the economy continues to expand and grow, so does the need for
+						energy resources. As demand rises, we can’t deny the fact that there will be a time
+						wherein we worry about the depletion of resources employed to create energy in a
+						conventional manner. It is because, in today's modern world, society is developing
+						new innovative non-conventional approaches that are gaining popularity.
+						Therefore, piezoelectric materials and reactions, which yield electrical energy when
+						subjected to mechanical strain, will play a significant role in resolving this problem.
+						The researchers will be producing and storing charge in the vehicle's wheels by
+						using piezoelectric in the tires because it will allow them to incorporate it in
+						numerous automotive industries too. Most significantly, it reduces power
+						concentration while activating and sustaining the most untouched and remote
+						sectors of a region. While we save money by using these power-generating tires,
+						we lessen environmental pollution by reducing our dependence on thermal
+						electricity. Electricity can then be used to power other devices or stored for later
+						use.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="container mt-36 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h6 class="ml-0 md:ml-40 text-4xl font-bold dark:text-body" data-aos="fade-right">The Structure</h6>
+			<img src="/assets/car.png" alt="" class="hidden md:block absolute w-6/12 left-50 -mt-12" data-aos="fade-up">
+			<p class="font-roboto ml-12 mt-8 text-lg dark:text-body h-full w-fit md:w-6/12" data-aos="fade-right">An "E-Tire" is the kind of product that the researchers have envisioned.
+				This project is not just any ordinary wheel that you can see on the road; its
+				product is built from a pneumatic tire that is piezoelectric in nature.
+				Piezoelectricity is the property of a material, such as a pneumatic tire, something
+				that allows anything to create an alternating current voltage when exposed to
+				mechanical stress or vibration. The piezoelectric materials will be applied to the
+				pneumatic tire. As that material is compressed, it may establish a voltage across
+				two of its faces. To be more precise, whenever the wheel moves or spins, the
+				piezo cell that is implanted in the product becomes constrained, releasing stress
+				and generating electric signals. Therefore, physical deformation of piezoelectric
+				material would transform mechanical energy to electrical energy and vice versa.
+				The product should then be built with a pneumatic tire wheel, rubber, a piezo
+				cell, an absorber spring, and, of course, the piezoelectric material.</p>
+		</section>
+	</div>
+
+	<div class="container mt-44 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h6 class="hidden md:block ml-0 marg-left2 text-4xl font-bold dark:text-body" data-aos="fade-left">Type of energy source</h6>
+			<img src="/assets/tire.png" alt="" class="hidden md:block absolute w-6/12 -ml-8 -mt-12" data-aos="fade-up">
+			<p class="hidden md:block font-roboto marg-left mt-8 text-lg dark:text-body h-full w-fit md:w-6/12 text-center" data-aos="fade-left">Piezoelectric materials are resources that can generate electricity when
+				mechanical stress is applied to them. Quartz is a well-known piezoelectric
+				material. The process includes the formation of an electric charge as a result of
+				electron migration in response to stress. When subjected to dimensional
+				change produced by strain, a piezoelectric material with a non-centrosymmetric
+				crystal structure could create displacement between anions and cations,
+				forming a surface charge. In doing so, it will work effectively as a sensor in a wide
+				range of applications, including vibration monitoring, impact detection, and
+				ultrasonic reception sensors.</p>
+		</section>
+	</div>
+
+	<div class="container mt-56 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+		<section class="w-full">
+			<h6 id="contact" class="text-4xl font-bold text-center mt-24 dark:text-body" data-aos="fade-in">How will it generate electricity<span class="text-currentColor text-7xl">?</span></h6>
+			<p class="font-roboto text-badge text-center mt-8 text-lg dark:text-body h-full w-1/2 ml-64" data-aos="fade-up">This project, ETire intends to pursue an alternative way of harnessing
+			energy by utilizing piezoelectric materials. Piezoelectric materials are those that
+			can generate electric energy when mechanical stress is applied to them. It
+			generates electricity even when the car is driving. According to Xavier Fraipont,
+			tires are constantly being deformed as they spin, so why not put that to good
+			use? The idea is using this material all over the tire to produce energy whilst
+			driving.</p>
+		</section>
+	</div>
+
+	<div class="flex justify-between items-center mt-16 md:mt-44 md:px-14 lg:px-24 w-full bg-darkest dark:bg-twist">
+		<section class="w-full">
+			<div class="mt-16 py-8 px-8 max-w-6xl ml-24 md:ml-4 dark:bg-input space-y-1 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+				<div class="text-center space-y-2 sm:text-left">
+					<h1 class="font-poppins text-2xl -ml-16 md:text-4xl md:ml-16 text-body" data-aos="fade-left">Members<span class="text-currentColor text-8xl">.</span></h1>
+					<h2 class="font-roboto font-black text-base md:text-2xl -ml-16 md:ml-16 text-secondary" data-aos="fade-right">Performance Task in General Physics 2</h2>
+					<p class="hidden md:flex font-roboto font-black text-base md:text-base ml-16 dark:text-twist">_</p>
+					<p class="-ml-16 font-roboto text-base md:flex md:text-base md:ml-16 text-left pb-36 text-body" data-aos="fade-up">
+						Alviar, John Angelo R. <br>
+						Bayani, Hazel Ann A. <br>
+						Camacho, Rochelle Mae B. <br>
+						Conti, Coleena Mitzi S. <br>
+						Jurilla, Shaiana V. <br>
+						Perreras, Princese Angel P. <br>
+						Seña, Alexie Andrea D.
+					</p>
+				</div>
+			</div>
+			<img src="/assets/logo2.png" alt="" class="hidden md:block absolute w-96 marg-left -mt-96 selector" data-aos="fade-up">
+			<button onclick="location.href='#works'" class="absolute -mt-48 marg-left2 px-6 py-2 md:px-12 md:py-4 bg-currentColor dark:text-input rounded-md text-white hover:text-currentColor font-bold items-center space-x-3 hover:bg-body delay-10 hover:dark:bg-body transition-all ease-in-out hover:scale-110">
+				<span>Documentation</span>
+			</button>
+		</section>
+	</div>
+	
+	
+	<script>
+		const checkbox = document.querySelector("#toggle");
+		const html = document.querySelector("html");
+
+		const toggleDarkMode = function () {
+			checkbox.checked
+			? html.classList.add("dark")
+			: html.classList.remove("dark");
+		}
+
+		toggleDarkMode();
+		checkbox.addEventListener("click", toggleDarkMode);
+
+		var image_tracker = 'off';
+		function changeBulb() {
+			var image = document.getElementById('bulb');
+			var logo = document.getElementById('logo');
+			var landing = document.getElementById('landing');
+			if(image_tracker=='off'){
+				image.src = "/assets/bulb2.png";
+				logo.src = "/assets/logo2.png";
+				landing.src = "/assets/landing2.png";
+				image_tracker = 'on';
+			} else {
+				image.src = "/assets/bulb1.png";
+				logo.src = "/assets/logo1.png";
+				landing.src = "/assets/landing1.png";
+				image_tracker = 'off';
+			}
+		}
+
+		function updateList() {
+			const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
+				return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
+			});
+
+			document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
+				
+			document.querySelectorAll(".nav-dot")[[...document.querySelectorAll('h6')].indexOf(titles[0])].classList.add("selected-circle");
+		}
+
+		updateList();
+		window.addEventListener('scroll', () => {
+			updateList();
+		})
+
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 9){
+				counter = 1;
+			}
+		}, 5000);
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>

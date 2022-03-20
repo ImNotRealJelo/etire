@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+#toggle:checked ~ label div.toggle-dot {
+    @apply translate-x-3;
+    background-color: #FAA916;
+}
+
+.selector {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.left-50 {
+    left: 50%;
+}
+.right-50 {
+    right: 50%;
+}
+.top-50 {
+    top: 50%;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+.marg-left {
+    margin-left: 50%;
+}
+
+.marg-left2 {
+    margin-left: 56%;
+}
